@@ -1,0 +1,10 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: auto;
+  max-width: 550px;
+  text-align: center;
+  padding: 10px;
+}
+

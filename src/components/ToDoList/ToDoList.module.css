@@ -1,0 +1,109 @@
+.root {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 33px;
+  border: lightgray 1px solid;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  padding-inline: 10px;
+}
+
+.itemDisplay {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: baseline;
+  padding: 0;
+}
+
+.listItemsDistance {
+  flex-grow: 1;
+}
+
+.test {
+  color: red
+}
+
+.isChecked {
+  text-decoration: line-through darkred 2px;
+  color: darkred;
+}
+
+.checkBox {
+  height: 18px;
+  cursor: pointer;
+}
+
+.checkBox:not(:last-child) {
+  margin-right: 8px;
+}
+
+.editInput {
+  height: 28px;
+  margin-top: 10px;
+}
+
+.listAndEditInputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.editShown {
+  display: block;
+}
+
+.deleteButtonsContainer {
+  display: flex;
+  margin-top: 50px;
+  gap: 15px;
+}
+
+.deleteButtons {
+  height: 28px;
+  border-radius: 5px;
+  background-color: indianred;
+  border: none;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.filterButtonsContainer {
+  display: flex;
+  gap: 15px;
+}
+
+.filterButtons {
+  height: 28px;
+  border-radius: 5px;
+  background-color: lightseagreen;
+  border: none;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.doneFilter {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 390px){
+  .filterButtonsContainer {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 260px) {
+  .deleteButtonsContainer {
+    flex-direction: column;
+  }
+}
+
+
+
